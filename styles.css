@@ -295,8 +295,12 @@ section {
 
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .card {
@@ -703,6 +707,12 @@ footer {
   border-top: 1px solid var(--border);
   font-size: 0.86rem;
   color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {
