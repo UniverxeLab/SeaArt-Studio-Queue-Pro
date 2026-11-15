@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeaArt Studio Queue &amp; Bulk Downloader — Chrome Extension by UniverxeLab</title>
+    <meta
+      name="description"
+      content="Local-first Chrome Manifest V3 Side Panel workstation for SeaArt.ai: multi-ratio batch prompt queue, 112 style presets, live Stamina guard, and selective ZIP downloads with .txt sidecars and catalog.csv."
+    />
+    <meta property="og:title" content="SeaArt Studio Queue & Bulk Downloader" />
+    <meta
+      property="og:description"
+      content="Turn SeaArt.ai Studio into a calm batch machine: 112 styles, multi-ratio live sync, Stamina Guard, and selective ZIP + .txt + catalog.csv exports."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://univerxelab.github.io/SeaArt-Studio-Queue-Pro/" />
+    <meta
+      property="og:image"
+      content="https://univerxelab.github.io/SeaArt-Studio-Queue-Pro/assets/marquee-promo-1400x560.png"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none';"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="icon" type="image/png" href="./assets/icon128.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="./index.html">
+          <img src="./assets/icon128.png" alt="SeaArt Studio Queue icon" width="34" height="34" />
+          <span>
+            <span class="brand-name">SeaArt Studio Queue</span>
+            <span class="brand-sub">by UniverxeLab · Chrome MV3 Extension</span>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#features">Features</a>
+          <a href="#showcase">Screenshots</a>
+          <a href="#workflow">How It Works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="./terms.html">Terms &amp; Refunds</a>
+          <a href="./privacy-policy.html">Privacy Policy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero hero-top" id="top">
+        <span class="badge">Chrome Side Panel Extension · v0.3.0 Local-First</span>
+        <h1>
+          <span class="grad-text">Turn SeaArt.ai Into a Calm Batch Machine</span>
+        </h1>
+        <p class="hero-sub">
+          Stop copy-pasting one prompt at a time. Run visual prompt batches right beside your active
+          <code>seaart.ai/create/image</code> workspace, track live Stamina costs before starting, and export clean
+          selective ZIP archives with every image, its <code>.txt</code> prompt metadata, and <code>catalog.csv</code>.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-mint" href="#pricing">Start Free · View Plans</a>
+          <a class="btn btn-violet" href="#showcase">Explore Real Extension Screenshots</a>
+          <a class="btn" href="./privacy-policy.html">Read Privacy Policy</a>
+        </div>
+
+        <div class="trust-row">
+          <span class="trust-pill"><strong>100% Local</strong> — Zero scraping servers</span>
+          <span class="trust-pill"><strong>112 Styles</strong> + 40 Niche Prompts</span>
+          <span class="trust-pill"><strong>Free Forever Tier</strong> + 24h Pro Trial Pass</span>
+          <span class="trust-pill"><strong>Lemon Squeezy</strong> Merchant of Record</span>
+        </div>
+
+        <div class="hero-frame">
+          <img
+            src="./assets/marquee-promo-1400x560.png"
+            alt="SeaArt Studio Queue and Gallery Zip Export chrome side panel preview"
+            width="1400"
+            height="560"
+          />
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="section-head">
+          <div class="section-kicker">Built for Daily Creators</div>
+          <h2>Everything Needed for High-Volume SeaArt.ai Output</h2>
+          <p>
+            Designed for illustrators, print-on-demand sellers, game artists, and prompt engineers who want
+            repeatable settings, zero wasted Stamina, and organized local downloads.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>1. Live Studio Sync &amp; Stamina Guard</h3>
+            <p>
+              Select single or multiple aspect ratios (<code>2:3</code>, <code>1:1</code>, <code>9:16</code>,
+              <code>4:3</code>), Images / Run, Prompt Magic, and Gen Mode. See exact Stamina estimates live right on
+              the <strong>Start Queue</strong> button and auto-pause if your balance hits your safety floor.
+            </p>
+          </article>
+          <article class="card">
+            <h3>2. 112 Style Presets + 8 Niche Packs</h3>
+            <p>
+              Browse 14 curated visual categories with transparent style preview and a 1-click <strong>Raw</strong> reset,
+              or drop 40 ready-to-run prompts across Comics, Anime, E-Commerce Studio, Interiors, Editorial Fashion, Dark
+              Fantasy, Etsy Wall Art, and 3D Isometric Dioramas.
+            </p>
+          </article>
+          <article class="card">
+            <h3>3. Selective ZIP + .txt + catalog.csv</h3>
+            <p>
+              Scan SeaArt history, filter Favorite ★ outputs, pick exact images with checkboxes (or 1-click
+              <strong>Pick 5</strong>), and download a structured ZIP containing your chosen images paired with matching
+              <code>.txt</code> metadata files and <code>catalog.csv</code>.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="showcase">
+        <div class="section-head">
+          <div class="section-kicker">Inside the Side Panel</div>
+          <h2>Real Extension Screenshots (Zero Mockups)</h2>
+          <p>Click any screenshot to zoom in and inspect every workspace tab in full detail.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="shot-card">
+            <button
+              type="button"
+              class="shot-thumb"
+              data-lightbox="./assets/01-batch-queue-and-live-cost.png"
+              data-title="Live Studio Controls, Style Strip & Real-Time Stamina Cost"
+            >
+              <img
+                src="./assets/01-batch-queue-and-live-cost.png"
+                alt="Batch Queue & Live Cost screenshot"
+                loading="lazy"
+              />
+            </button>
+            <div class="shot-body">
+              <div class="shot-tag">Studio Tab</div>
+              <h3>What You See = What Runs + Live Stamina Cost</h3>
+              <p>
+                Preview auto-added style prefixes/suffixes with 1-click Raw reset, switch multi-ratio matrices, and
+                verify total batch Stamina cost directly on <strong>Start Queue</strong>.
+              </p>
+            </div>
+          </article>
+
+          <article class="shot-card">
+            <button
+              type="button"
+              class="shot-thumb"
+              data-lightbox="./assets/02-112-styles-and-niche-packs.png"
+              data-title="112 Curated Style Presets & 8 Ready-to-Run Niche Prompt Packs"
+            >
+              <img
+                src="./assets/02-112-styles-and-niche-packs.png"
+                alt="112 Styles and Niche Prompt Packs screenshot"
+                loading="lazy"
+              />
+            </button>
+            <div class="shot-body">
+              <div class="shot-tag">Templates &amp; Packs</div>
+              <h3>112 Styles &amp; 40 Instant Niche Prompts</h3>
+              <p>
+                Combine clean visual prompt cards with repeat multipliers (<code>1x+</code>), Mix &amp; Match columns,
+                CSV/TXT imports, and 8 starter prompt libraries.
+              </p>
+            </div>
+          </article>
+
+          <article class="shot-card">
+            <button
+              type="button"
+              class="shot-thumb"
+              data-lightbox="./assets/03-selective-zip-gallery.png"
+              data-title="Selective Gallery Checkboxes & Structured ZIP Export"
+            >
+              <img
+                src="./assets/03-selective-zip-gallery.png"
+                alt="Selective ZIP Gallery export screenshot"
+                loading="lazy"
+              />
+            </button>
+            <div class="shot-body">
+              <div class="shot-tag">Gallery Tab</div>
+              <h3>Pick Exact Outputs. Export 1 Clean ZIP.</h3>
+              <p>
+                Check individual outputs, favorite stars (★), or hit <strong>Pick 5</strong>. Every ZIP bundles full
+                images, matching <code>.txt</code> sidecars, and <code>catalog.csv</code>.
+              </p>
+            </div>
+          </article>
+
+          <article class="shot-card">
+            <button
+              type="button"
+              class="shot-thumb"
+              data-lightbox="./assets/04-guide-and-creator-ranks.png"
+              data-title="Built-In ? Guide Manual, Glossary & Creator XP Ranks"
+            >
+              <img
+                src="./assets/04-guide-and-creator-ranks.png"
+                alt="Built-in Guide and Creator XP Ranks screenshot"
+                loading="lazy"
+              />
+            </button>
+            <div class="shot-body">
+              <div class="shot-tag">? Guide &amp; XP Progression</div>
+              <h3>Plain-Language Manual &amp; Local XP Ranks</h3>
+              <p>
+                Zero guesswork: every control has tooltip help plus an in-panel manual covering Wait/Jitter safety, LVL
+                1–5 Creator Ranks, and how to unlock your free 24h Pro Pass.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <article class="shot-card shot-wide">
+          <div class="grid-2 shot-wide-grid">
+            <button
+              type="button"
+              class="shot-thumb"
+              data-lightbox="./assets/05-selector-health-and-pro.png"
+              data-title="Self-Healing Selector Pick Recovery & Transparent Licensing"
+            >
+              <img
+                src="./assets/05-selector-health-and-pro.png"
+                alt="Selector Health and Setup & Pro screenshot"
+                loading="lazy"
+              />
+            </button>
+            <div class="shot-body shot-wide-body">
+              <div class="shot-tag">Setup &amp; Pro Tab</div>
+              <h3>Self-Healing Selectors + 1-Click License Activation</h3>
+              <p class="mb-12">
+                Six live health checks confirm the extension is locked onto SeaArt's prompt box, Negative Prompt toggle,
+                Generate button, Results feed, and Stamina counter. If SeaArt updates its layout, click
+                <strong>Pick</strong> to re-bind any control in 5 seconds.
+              </p>
+              <p>
+                Free users get daily quota + 24h Pro Pass unlock; Pro keys from Lemon Squeezy activate directly inside
+                this panel in seconds.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="workflow">
+        <div class="section-head">
+          <div class="section-kicker">3-Minute Workflow</div>
+          <h2>How It Works Inside Chrome</h2>
+          <p>Everything runs locally inside your open Chrome browser tab — no cloud logins, proxies, or API keys.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="step-num">1</div>
+            <h3>Open SeaArt &amp; Pin Side Panel</h3>
+            <p>
+              Visit <code>seaart.ai/create/image</code>, click the SeaArt Studio Queue icon, and confirm live green sync
+              with your model, ratio, and Stamina balance.
+            </p>
+          </article>
+          <article class="card">
+            <div class="step-num">2</div>
+            <h3>Pick Style, Ratios &amp; Prompts</h3>
+            <p>
+              Choose a niche starter pack or type visual prompt cards, toggle multi-ratios if desired, set calm Wait +
+              Jitter pacing, and verify cost right on <strong>Start Queue</strong>.
+            </p>
+          </article>
+          <article class="card">
+            <div class="step-num">3</div>
+            <h3>Archive Selective ZIP + Metadata</h3>
+            <p>
+              Review outputs in <strong>Gallery</strong>, star favorites, check exact images you want to keep, and export
+              organized folders ready for client delivery or shop listings.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <div class="section-head">
+          <div class="section-kicker">Simple &amp; Honest Pricing</div>
+          <h2>Start Free. Upgrade Only If You Batch Daily.</h2>
+          <p>
+            Test the complete engine free before spending anything — plus earn a one-time <strong>Free 24h Pro Pass</strong>
+            simply by trying real batches inside the extension.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card price-card">
+            <div>
+              <span class="plan-badge plan-badge-mint">No Card Required</span>
+              <div class="price">$0 <span>/ forever</span></div>
+              <h3>Free Forever</h3>
+              <ul>
+                <li><strong>5 queued prompts per day</strong> (resets daily)</li>
+                <li>All <strong>112 built-in style presets</strong> &amp; 8 niche packs</li>
+                <li>Live Studio sync &amp; Stamina Guard safety stop</li>
+                <li>Unlimited individual &amp; Save All downloads</li>
+                <li>Selective ZIP export up to <strong>5 selected images/ZIP</strong></li>
+              </ul>
+            </div>
+            <a class="btn" href="#workflow">Included Free with Extension</a>
+          </article>
+
+          <article class="card price-card">
+            <div>
+              <span class="plan-badge plan-badge-mint">Flexible Monthly</span>
+              <div class="price">$4.90 <span>/ month</span></div>
+              <h3>Starter Pro</h3>
+              <ul>
+                <li><strong>Unlimited daily prompt queues</strong> &amp; multi-ratio batches</li>
+                <li><strong>Unlimited selected images</strong> per ZIP export</li>
+                <li>Checkpoint pauses &amp; full batch CSV catalogs</li>
+                <li>Use across up to <strong>3–5 Chrome installs</strong></li>
+                <li>Instant email license key · Cancel anytime in customer portal</li>
+              </ul>
+            </div>
+            <a class="btn btn-violet" href="#terms">Purchase Inside Extension → Setup &amp; Pro</a>
+          </article>
+
+          <article class="card card-featured price-card">
+            <div>
+              <span class="plan-badge plan-badge-gold">Best Launch Value</span>
+              <div class="price">$29 <span>one-time</span></div>
+              <h3>Early-Bird Lifetime</h3>
+              <ul>
+                <li>Everything in Starter Pro <strong>forever</strong></li>
+                <li><strong>Zero recurring subscriptions</strong> — pay once</li>
+                <li>All v0.x updates &amp; selector definitions included</li>
+                <li>Use across up to <strong>3–5 Chrome installs</strong></li>
+                <li>Protected by our <strong>7-day refund guarantee</strong></li>
+              </ul>
+            </div>
+            <a class="btn btn-mint" href="#terms">Purchase Inside Extension → Setup &amp; Pro</a>
+          </article>
+        </div>
+
+        <div class="callout-banner">
+          <strong>Free 24-Hour Pro Pass Milestone:</strong> Generate <strong>8 items</strong> or hit a
+          <strong>2-day creation streak</strong> in SeaArt Studio Queue to unlock a one-time 24h Pro Pass right inside
+          <code>Setup &amp; Pro</code> — test unlimited queues and ZIP bundles completely free first.
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="section-head">
+          <div class="section-kicker">Questions &amp; Answers</div>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Does this extension send my prompts, images, or SeaArt cookies to remote servers?</summary>
+            <p>
+              No. Everything runs 100% inside your own Chrome browser using Manifest V3 local storage
+              (<code>chrome.storage.local</code>) and Chrome's native <code>downloads</code> API. We operate zero remote
+              scraping servers and never see your prompts, SeaArt account, or generated media. The only external request
+              is optional Pro license validation directly against <code>api.lemonsqueezy.com</code> if you enter a key.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How is billing handled and who processes Pro payments?</summary>
+            <p>
+              Paid licenses (<strong>$4.90/mo Starter Pro</strong> and <strong>$29 Early-Bird Lifetime</strong>) are sold
+              directly by UniverxeLab through <strong>Lemon Squeezy</strong> as Merchant of Record, not by Google or Chrome
+              Web Store. Lemon Squeezy handles cards/PayPal, regional VAT/sales tax compliance, receipts, and instant email
+              license key delivery.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What if SeaArt.ai updates its button layout and selectors stop clicking?</summary>
+            <p>
+              Open the <strong>Setup &amp; Pro</strong> tab and check <strong>Selector Health</strong>. Any affected box turns
+              amber/red and you can click <strong>Pick</strong> next to that control, then click the corresponding field on
+              SeaArt.ai to save a permanent local override in 5 seconds.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do refunds and cancellations work?</summary>
+            <p>
+              Subscriptions can be canceled anytime with 1 click via your Lemon Squeezy receipt/customer portal. Both
+              Starter Pro and Lifetime keys include a <strong>7-day refund window</strong> if the extension fails to work
+              as documented on a supported Chrome desktop build with <code>seaart.ai</code>. See full details on our
+              <a href="./terms.html">Terms &amp; Refund Policy</a> page.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is this an official SeaArt.ai product?</summary>
+            <p>
+              No. SeaArt Studio Queue &amp; Bulk Downloader is an independent client-side productivity utility developed by
+              UniverxeLab to help creators organize prompts and archives inside their own browser session. It is not
+              affiliated with or endorsed by SeaArt.ai.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section id="terms" class="section-compact">
+        <article class="card">
+          <h3>Billing, Refunds &amp; Publisher Support</h3>
+          <p>
+            <strong>Publisher:</strong> UniverxeLab (Independent Software Developer)<br />
+            <strong>Merchant of Record:</strong> Lemon Squeezy handles checkout, tax/VAT invoicing, subscription portal,
+            and license key issuance for paid upgrades.<br />
+            <strong>Support Email:</strong>
+            <a href="mailto:support.univerxelab@gmail.com">support.univerxelab@gmail.com</a> (replies typically within 1–2 business days for
+            license resets, selector help, or refund requests).
+          </p>
+          <div class="cta-row cta-tight">
+            <a class="btn btn-sm" href="./terms.html">Read Full Terms &amp; 7-Day Refund Policy</a>
+            <a class="btn btn-sm" href="./privacy-policy.html">Read Chrome Web Store Privacy Policy</a>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <span>© 2026 UniverxeLab · SeaArt Studio Queue &amp; Bulk Downloader</span>
+        <div class="footer-links">
+          <a href="./index.html">Home</a>
+          <a href="./terms.html">Terms &amp; Refunds</a>
+          <a href="./privacy-policy.html">Privacy Policy</a>
+          <a href="mailto:support.univerxelab@gmail.com">Support</a>
+        </div>
+      </footer>
+    </main>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot preview">
+      <div class="lightbox-inner">
+        <div class="lightbox-bar">
+          <span id="lightbox-title">Screenshot Preview</span>
+          <button type="button" class="lightbox-close" id="lightbox-close">Close ✕</button>
+        </div>
+        <img id="lightbox-img" src="" alt="Expanded extension screenshot" />
+      </div>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
