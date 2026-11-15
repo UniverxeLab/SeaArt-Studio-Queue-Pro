@@ -406,36 +406,61 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 18px;
+  gap: 20px;
+}
+
+.price-card-head {
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.16);
+  margin-bottom: 14px;
+}
+
+.price-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.28rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+
+.price-card ul {
+  margin: 0;
 }
 
 .card-featured {
   border-color: var(--mint-border);
-  background: linear-gradient(155deg, rgba(124, 58, 237, 0.18), rgba(20, 241, 149, 0.08));
-  box-shadow: 0 12px 34px rgba(16, 185, 129, 0.12);
+  background: linear-gradient(155deg, rgba(124, 58, 237, 0.2), rgba(20, 241, 149, 0.08));
+  box-shadow: 0 14px 38px rgba(124, 58, 237, 0.16), 0 8px 24px rgba(16, 185, 129, 0.1);
 }
 
 .plan-badge {
   display: inline-block;
-  padding: 3px 10px;
+  padding: 4px 11px;
   border-radius: 999px;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 10px;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
 }
 
-.plan-badge-mint {
-  background: rgba(52, 211, 153, 0.16);
-  border: 1px solid rgba(52, 211, 153, 0.45);
-  color: var(--mint);
+.plan-badge-slate {
+  background: rgba(148, 163, 184, 0.1);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  color: #cbd5e1;
 }
 
-.plan-badge-gold {
-  background: rgba(251, 191, 36, 0.14);
-  border: 1px solid rgba(251, 191, 36, 0.4);
-  color: var(--gold);
+.plan-badge-indigo {
+  background: rgba(99, 102, 241, 0.14);
+  border: 1px solid rgba(129, 140, 248, 0.36);
+  color: #c7d2fe;
+}
+
+.plan-badge-violet {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.32), rgba(99, 102, 241, 0.24));
+  border: 1px solid rgba(167, 139, 250, 0.62);
+  color: #ede9fe;
+  box-shadow: 0 0 18px rgba(139, 92, 246, 0.22);
 }
 
 .price {
@@ -443,48 +468,56 @@ section {
   font-weight: 800;
   color: var(--mint);
   line-height: 1.1;
-  margin-bottom: 4px;
+  margin: 0;
+}
+
+.price-neutral {
+  color: #f1f5f9;
+}
+
+.price-indigo {
+  color: #ddd6fe;
 }
 
 .price s.price-strike {
-  font-size: 1.25rem;
+  font-size: 1.22rem;
   font-weight: 700;
-  color: var(--muted);
+  color: var(--subtle);
   text-decoration: line-through;
   text-decoration-thickness: 2px;
   margin-right: 6px;
 }
 
 .price span {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   color: var(--muted);
   font-weight: 600;
 }
 
 .price-batch-note {
-  margin: 0 0 12px;
-  padding: 6px 10px;
-  border-radius: 8px;
-  border: 1px solid rgba(20, 241, 149, 0.28);
-  background: rgba(20, 241, 149, 0.08);
-  font-size: 0.82rem;
-  line-height: 1.4;
+  margin: 0 0 14px;
+  padding: 8px 11px;
+  border-radius: 10px;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  background: rgba(52, 211, 153, 0.08);
+  font-size: 0.81rem;
+  line-height: 1.42;
   color: #a7f3d0;
   font-weight: 600;
 }
 
 .callout-banner {
-  margin-top: 20px;
+  margin-top: 22px;
   padding: 18px 22px;
   border-radius: 16px;
-  border: 1px solid rgba(251, 191, 36, 0.35);
-  background: rgba(251, 191, 36, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.36);
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.12), rgba(19, 17, 38, 0.92));
   color: var(--text);
   font-size: 0.94rem;
 }
 
 .callout-banner strong {
-  color: var(--gold);
+  color: #c4b5fd;
 }
 
 .faq-list {
