@@ -446,9 +446,30 @@ section {
   margin-bottom: 4px;
 }
 
+.price s.price-strike {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  margin-right: 6px;
+}
+
 .price span {
   font-size: 0.92rem;
   color: var(--muted);
+  font-weight: 600;
+}
+
+.price-batch-note {
+  margin: 0 0 12px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(20, 241, 149, 0.28);
+  background: rgba(20, 241, 149, 0.08);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #a7f3d0;
   font-weight: 600;
 }
 
